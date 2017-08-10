@@ -1,0 +1,14 @@
+
+
+
+
+
+xcode 搜索和替换的正则匹配:
+Find>Text>Matching
+(Insert Pattern)
+"assign Any1 id< Any2"
+
+
+Find and Replace using patterns in Xcode 8<https://stackoverflow.com/questions/41605853/find-and-replace-using-patterns-in-xcode-8?noredirect=1&lq=1>
+
+
