@@ -62,3 +62,22 @@ http://www.zhimengzhe.com/IOSkaifa/129445.html
 时间：2017-04-18 来源：Android开发学习网
 https://m.baidu.com/from=1015795b/bd_page_type=1/ssid=0/uid=0/pu=usm%400%2Csz%40224_220%2Cta%40iphone___3_601/baiduid=6927FB54CF99B63F91467C0D98F2435A/w=0_10_/t=iphone/l=3/tc?ref=www_iphone&lid=12354690046159306202&order=5&fm=alop&tj=www_normal_5_0_10_title&vit=osres&m=8&srd=1&cltj=cloud_title&asres=1&nt=wnor&title=学Android还是IOS开发%3F哪个更有前景%3F_华清远见移动...&dict=32&w_qd=IlPT2AEptyoA_ykywhActuixAkFTe7GbGQYNehXS7fWvo5mph4nbpZC8&sec=23116&di=afc130ba0954953b&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_8tTLzuqiI3saPOaUbB5UTiqAp83Sp_8vHKDfK&clk_info=%7B%22srcid%22%3A%221599%22%2C%22tplname%22%3A%22www_normal%22%2C%22t%22%3A1502339391642%2C%22xpath%22%3A%22div-a-h3%22%7D&sfOpen=1
 
+
+
+今天更新xcode8.3之后，项目运行就报错了
+第一个是 Invalid bitcode signature
+第二个是 Linker command falied with exit code 1 (use -v to see invocation)
+之前8.2都没问题，修改bitcode也没用，求知晓解决办法的人支招，感激不尽 
+
+http://www.cocoachina.com/bbs/read.php?tid-1716894-page-2.html
+19 楼：
+  发表于: 2017-03-30 10:56   发自: Web Page
+  
+我也碰到这个问题了，右键点击报错信息，选择“reveal in log”，
+查看了下错误的log，
+发现是 /Users/mymac/Library/Developer/Xcode/DerivedData/ 目录下的缓存文件好像出问题了，
+把对应的你的报错项目的缓存文件删除了，
+再com + r 编译下，我的问题也是和楼主报错一致，
+通过这个方法解决了，希望能帮到其他人。 
+
+
